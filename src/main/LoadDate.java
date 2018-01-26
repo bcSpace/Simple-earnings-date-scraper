@@ -9,7 +9,7 @@ import org.jsoup.nodes.Document;
 
 public class LoadDate {
 	
-	String database = "C:\\EarningsDates\\";
+	String database = "C:\\EarningsDates\\"; //local database 
 	
 	String webpage = "https://www.zacks.com/stock/research/";
 	Document doc; 
@@ -48,10 +48,6 @@ public class LoadDate {
 			}
 		}
 		
-		//System.out.println(doc);
-		
-		//&offset=100&size=100
-		
 		getEarnings();
 		if(failed == false) writeData(underlying);
 		
@@ -64,6 +60,7 @@ public class LoadDate {
 		
 		String s = doc.toString();
 		
+		//checking to see if there was an error in loading the page
 		if(s.contains("404 Page Not Found") || s.contains("The page you are looking for does not exist") || s.contains("ETF Quote Details") || s.contains("www.zacks.com/search.php?q=") || s.contains("www.zacks.com/funds/etf/")) failed = true;
 		else failed = false;
 		

@@ -10,8 +10,6 @@ public class Main {
 		ld = new LoadDate();
 		ld.loadDoc(symbol);
 		ld.getEarnings();
-		
-		
 	}
 	
 	public static void main(String[] args) {
