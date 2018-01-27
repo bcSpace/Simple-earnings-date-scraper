@@ -8,7 +8,7 @@ The goal of this project is to create a way to get all histoical earnings dates 
 It currently uses JSoup to scrape Zacks.com for all histoical earnings dates for a ticker symbol submitted by the user, then it will write that data to a local database (default C:\\EarningsDates\\).  
 
 # How it works
-Waits for a user to input a symbol
+Waits for the user to input a symbol
 
 Once it has that symbol it will load https://www.zacks.com/stock/research/ + symbol + /earnings-announcements
 
