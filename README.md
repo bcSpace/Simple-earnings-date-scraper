@@ -1,7 +1,7 @@
 # Simple-earnings-date-scraper
 ---
 
-# Goal and purpose
+# Goal
 The goal of this project is to create a way to get all histoical earnings dates for a symbol in the stock market. 
 
 # What is does
